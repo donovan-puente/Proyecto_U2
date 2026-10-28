@@ -49,15 +49,20 @@ a {
   border-bottom:3px solid var(--amarillo)
 }
 .brand {
-  font-family:'Baloo 2',cursive;
-  font-weight:900;
-  font-size:1.7rem;
-  color:var(--rojo);
-  text-decoration:none;
-  white-space:nowrap
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    text-decoration: none;
 }
-.brand span {
-  color:var(--verde)
+.logo-boing {
+    display: block;
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+.brand:hover .logo-boing {
+    transform: scale(1.08);
 }
 .navbar .nav-link {
   font-weight:800;
